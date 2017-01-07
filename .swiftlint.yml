@@ -1,0 +1,14 @@
+disabled_rules:
+  - cyclomatic_complexity
+  - function_body_length
+  - function_parameter_count
+  - line_length
+  - nesting
+  - type_name
+  - variable_name
+  - todo
+excluded:
+  - Pods
+  - AppTests
+  - LibraryTests
+  - TestHost

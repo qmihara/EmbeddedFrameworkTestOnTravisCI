@@ -288,6 +288,7 @@
 			buildConfigurationList = 101194981E20F8CE002313D5 /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
 				7BB1736CD2BECFDD737CDE3B /* [CP] Check Pods Manifest.lock */,
+				101194D91E210EA9002313D5 /* Swift Lint */,
 				1011947A1E20F8CE002313D5 /* Sources */,
 				1011947B1E20F8CE002313D5 /* Frameworks */,
 				1011947C1E20F8CE002313D5 /* Resources */,
@@ -492,6 +493,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		101194D91E210EA9002313D5 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		1DD59615306079C2CB70DFDE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1043,6 +1058,7 @@
 				1011949A1E20F8CE002313D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1011949B1E20F8CE002313D5 /* Build configuration list for PBXNativeTarget "AppTests" */ = {
 			isa = XCConfigurationList;
@@ -1051,6 +1067,7 @@
 				1011949D1E20F8CE002313D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		101194BA1E20F9DF002313D5 /* Build configuration list for PBXNativeTarget "Library" */ = {
 			isa = XCConfigurationList;
@@ -1059,6 +1076,7 @@
 				101194BC1E20F9DF002313D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		101194BE1E20F9DF002313D5 /* Build configuration list for PBXNativeTarget "LibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -1067,6 +1085,7 @@
 				101194C01E20F9DF002313D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		101194D41E20FAAA002313D5 /* Build configuration list for PBXNativeTarget "TestHost" */ = {
 			isa = XCConfigurationList;
@@ -1075,6 +1094,7 @@
 				101194D61E20FAAA002313D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
